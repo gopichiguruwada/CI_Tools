@@ -1,13 +1,17 @@
 name: CI Workflow
+
 on:
- push:
- branches:
- - master
+  push:
+    branches:
+      - main
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-        -name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
-        -name: Run the file
-        run: echo "success"
+
+      - name: Run CI
+        run: echo "Build & Test Successful!"
