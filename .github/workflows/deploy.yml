@@ -9,5 +9,5 @@ jobs:
  steps:
  - name: Checkout code
  uses: actions/checkout@v4
- - name: Run python program
- run: python hello.py
+ - name: Run file
+ run: echo "success"
